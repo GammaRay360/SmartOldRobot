@@ -1,0 +1,127 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.amuday.smartalarmclockclient.ControlsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="left|center_vertical">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/base_r"
+            android:layout_gravity="left|top"
+            android:src="@drawable/spin_l"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/base_l"
+            android:layout_toEndOf="@+id/base_l" />
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/base_l"
+            android:layout_gravity="left|top"
+            android:src="@drawable/spin_r"
+            android:layout_marginLeft="92dp"
+            android:layout_marginStart="92dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/shoulder_r"
+            android:src="@drawable/rotate_r"
+            android:layout_above="@+id/base_r"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/arm_r"
+            android:src="@drawable/rotate_r"
+            android:layout_above="@+id/shoulder_r"
+            android:layout_alignLeft="@+id/shoulder_r"
+            android:layout_alignStart="@+id/shoulder_r" />
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/grippers_r"
+            android:src="@drawable/rotate_r"
+            android:layout_above="@+id/arm_r"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/grippers_c"
+            android:src="@drawable/close"
+            android:layout_alignTop="@+id/grippers_o"
+            android:layout_toRightOf="@+id/grippers_o"
+            android:layout_toEndOf="@+id/grippers_o" />
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/shoulder_l"
+            android:src="@drawable/rotate_l"
+            android:layout_above="@+id/base_l"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/arm_l"
+            android:src="@drawable/rotate_l"
+            android:layout_above="@+id/shoulder_l"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/grippers_l"
+            android:src="@drawable/rotate_l"
+            android:layout_above="@+id/arm_l"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/grippers_o"
+            android:src="@drawable/open"
+            android:layout_above="@+id/grippers_spin_r"
+            android:layout_alignLeft="@+id/base_l"
+            android:layout_alignStart="@+id/base_l" />
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/grippers_spin_r"
+            android:src="@drawable/rot_grp_r"
+            android:layout_alignTop="@+id/grippers_spin_l"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/grippers_spin_l"
+            android:src="@drawable/rot_grp_l"
+            android:layout_above="@+id/grippers_l"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+
+</FrameLayout>
